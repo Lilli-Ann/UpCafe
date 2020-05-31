@@ -108,6 +108,7 @@ function CheckOut(){
     }
     else{
         $('#modalbox div h4').text("Thanks For Shopping");
+        ClearItems();
     }
     $('#modalbox').css("display","block");
 }
