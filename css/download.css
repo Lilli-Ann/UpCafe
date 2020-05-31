@@ -1,0 +1,214 @@
+body
+{
+    
+    background:#232327;
+    color: white;
+}
+header
+{
+    display: flex;
+    justify-content:space-evenly; 
+    padding:  10px 35px;
+    color: white;
+}
+.navbar 
+{
+   padding: 20px 0;
+   margin: auto;
+   text-align: center;
+   width: 700px;
+
+}
+.navbar a
+{
+    padding: 0 20px;
+    text-decoration: none;
+    color:inherit;
+    transition: ease-in-out .3s color;
+    font-size: 17.2px;
+    margin: 1%;
+}
+.navbar a:hover
+{
+    color: #EC7849;
+    transition: ease-in 0.9s;
+}
+header img
+{
+    width: 60px;
+    height: 60px;
+}
+
+
+.logo
+{
+    display: block;
+}
+h4
+{
+float: left;
+font-size: 20px;
+}
+img
+{
+    float: left;
+}
+
+.dropdown
+{
+    margin: auto 1px auto 0;
+    float: left;
+    overflow: hidden;
+}
+  
+.drop-button
+{
+    background-color: #EC7849;
+    color: white;
+    border: none;
+    font-size: 16px;  
+    width: 190px;
+    height: 50px;
+}
+  
+.dropdown-content 
+{
+    box-shadow: 16px 27px 14px -10px #EC7849;
+
+    display: none;
+    position: absolute;
+    background-color: #EC7849;
+    min-width: 190px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a 
+{
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover 
+{
+    background-color: rgba(236, 119, 73, 0.63);
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content
+{
+    display: block;
+}
+
+.download-container
+{
+    font-family: Arial, Helvetica, sans-serif;
+    width:100%;
+    height: 100%;
+    display: block;
+    color: white;
+}
+
+.download-vector
+{
+    float: left;
+    width: 50%;
+    height: 100%; 
+}
+
+.download-right
+{
+    float: left;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+}
+
+.inner-right
+{
+    margin: auto 20px;
+    padding: 50px;
+}
+.download-words
+{
+    margin-top: -10%;
+}
+
+.download-words a
+{
+    background-color: royalblue;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-decoration: none;
+}
+.download-words h1
+{
+    text-align: center;
+}
+.download-words h3
+{
+    text-align: left;
+}
+.download-words ol 
+{
+    line-height: 30px;
+    text-align: left;
+}
+.vector-art
+{
+    width: 80%;
+    height: 80%;
+    margin-left: 13%;
+}
+
+.download-options
+{
+display: flex;
+justify-content: left;
+align-items: center;
+margin-top: 10px;
+padding: 10px 0;
+}
+.download-options h5
+{
+    color: #EC7849;
+}
+.download-options i
+{
+    text-align: center;
+    margin: 0 10px;
+    font-size: 20px;
+
+}
+.download-container h3
+{
+    text-align: left;
+}
+
+.btn
+{
+text-align: center;
+margin-top: 5%;
+}
+.download-right button
+{
+    background:#EC7849;
+    border: none;
+    width: 200px;
+    height: 90px;
+    font-size: 35px;
+    border-radius: 10px;
+    color: white;
+}
+
+ol li
+{
+    list-style-type: lower-roman;
+}
