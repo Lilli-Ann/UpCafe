@@ -45,9 +45,33 @@ body{
     background-color: #EC7849;
     float: left;
     width: 25vw;
-
+    text-align: center;
 }
 
+#cartlist{
+    margin-top:50px ;
+    padding: 10px;
+}
 #cartlist li{
     cursor: pointer;
+    list-style: none;
+}
+
+#modalbox{
+    position: absolute;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+}
+
+#modalbox div{
+    margin: 20% auto 0;
+    background-color: white;
+    color: #EC7849;
+    text-align: center;
+    height: 100px;
+    width: 200px;
+    padding: 10px;
 }

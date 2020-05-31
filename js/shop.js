@@ -53,7 +53,7 @@ let cartItems=[
         image:"food_items/VanillaFruitCake.jpg"
     }
 ]
-
+var TotalPrice=0;
 $().ready(function () {
     LoadBuyItems();
 });
@@ -83,13 +83,36 @@ function AddCart(index){
     var item=cartItems[index];
     var li=document.createElement("li");
     li.setAttribute('value',item.price);
-    li.setAttribute('onClick','RemoveItem('+li+')');
+    // li.setAttribute('onClick','RemoveItem('+li+')');
+    CalculateTotal(item.price);
 
     li.innerHTML=item.name;
     $("#cartlist").append(li);
 }
 
-function RemoveItem(listItem) {
-    $("#cartlist").remove(listItem);
+function CalculateTotal(price){
+    TotalPrice+=price;
+    $('#totalPrice').text('Total Price: $'+TotalPrice);
+}
 
+function ClearItems() {
+    $("#cartlist").empty();
+    TotalPrice=0;
+    $('#totalPrice').text('Total Price: $'+TotalPrice);
+
+}
+
+function CheckOut(){
+    if(TotalPrice==0){
+        $("#modalbox div h4").text("No Items In Cart");
+    }
+    else{
+        $('#modalbox div h4').text("Thanks For Shopping");
+    }
+    $('#modalbox').css("display","block");
+}
+
+function CloseModal() {
+    $('#modalbox').css("display","none");
+    
 }
